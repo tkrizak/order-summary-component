@@ -88,10 +88,19 @@ body {
   font-family: var(--ff-all);
   background-color: var(--clr-pale-blue);
   font-size: var(--fs-mobile);
+  background-image: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
   line-height: 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+@media (max-width: 412px) {
+  body {
+    background-image: url(images/pattern-background-mobile.svg);
+  }
 }
 
 .container {
